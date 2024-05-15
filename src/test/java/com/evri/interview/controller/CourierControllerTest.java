@@ -104,6 +104,7 @@ class CourierControllerTest {
     void putShouldUpdateCourier_IfExist() {
         long courierId = 10L;
         CourierModel courier = CourierModel.builder()
+                .id(courierId)
                 .name("Ann Smith")
                 .active(true)
                 .build();
